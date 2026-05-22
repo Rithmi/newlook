@@ -64,11 +64,22 @@ nav.scrolled{box-shadow:0 2px 28px rgba(42,35,24,.1);}
 .nav-logo{
   display:flex;
   align-items:center;
+  justify-content:center;
   text-decoration:none;
+
+  /* black square background */
+  background:#000;
+  
+  width:52px;
+  height:52px;
+  border-radius:16px; /* optional rounded corners */
+
+  /* optional shadow */
+  box-shadow:0 8px 20px rgba(66, 66, 66, 0.25);
 }
 
 .logo-img{
-  height:52px;      /* increase/decrease logo size */
+  height:82px;
   width:auto;
   object-fit:contain;
   display:block;
@@ -179,10 +190,15 @@ nav.scrolled{box-shadow:0 2px 28px rgba(42,35,24,.1);}
   padding-top:64px;
 }
 
-.hero-bg{
-  position:absolute;inset:0;
-  width:100%;height:100%;
-  object-fit:cover;object-position:center right;
+.hero-video{
+  position:absolute;
+  inset:0;
+  width:100%;
+  height:100%;
+  object-fit:cover;
+  object-position:center center;
+  transform:scale(1.03);
+  filter:brightness(.78);
 }
 .hero-fade{
   position:absolute;inset:0;
